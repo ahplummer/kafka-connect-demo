@@ -1,0 +1,15 @@
+{
+    "name": "test-connector",
+    "config": {
+      "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+      "database.hostname": "sqldestination",
+      "database.port": "1433",
+      "database.user": "sa",
+      "database.password": "Pa^^w0rd",
+      "database.dbname": "TestDB",
+      "database.server.name": "sqldestination",
+      "table.include.list": "dbo.testtable",
+      "database.history.kafka.bootstrap.servers": "kafka:9092",
+      "database.history.kafka.topic": "dbhistory.fulfillment"
+    }
+  }
